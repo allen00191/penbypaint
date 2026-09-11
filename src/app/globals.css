@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --pp-primary: #2b8385;
+  --pp-primary-active: #39979a;
+  --pp-primary-disabled: #c8d6d6;
+  --pp-ink: #404040;
+  --pp-body-strong: #333333;
+  --pp-muted: #a9a9a9;
+  --pp-muted-soft: #c5c5c5;
+  --pp-hairline: #dedede;
+  --pp-canvas: #faf8f5;
+  --pp-card: #ffffff;
+  --pp-error: #c64545;
+}
+
+@theme inline {
+  --color-primary: var(--pp-primary);
+  --color-primary-active: var(--pp-primary-active);
+  --color-primary-disabled: var(--pp-primary-disabled);
+  --color-ink: var(--pp-ink);
+  --color-body-strong: var(--pp-body-strong);
+  --color-muted: var(--pp-muted);
+  --color-muted-soft: var(--pp-muted-soft);
+  --color-hairline: var(--pp-hairline);
+  --color-canvas: var(--pp-canvas);
+  --color-card: var(--pp-card);
+  --color-error: var(--pp-error);
+  --font-sans: var(--font-noto);
+  --animate-partner-marquee: partner-marquee 32s linear infinite;
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 15px;
+  --radius-xl: 20px;
+  --radius-2xl: 30px;
+  --radius-pill: 9999px;
+}
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--pp-canvas);
+  color: var(--pp-ink);
+  font-family: var(--font-noto), "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 960px) {
+  body {
+    line-height: 2;
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--pp-primary) 25%, white);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--pp-primary-active);
+  outline-offset: 2px;
+}
+
+@keyframes partner-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-partner-marquee {
+    animation: none;
+  }
+}
