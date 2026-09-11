@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
@@ -62,7 +62,7 @@ export function Header() {
           href="/"
           className="relative z-20 flex items-center gap-3 text-lg font-bold tracking-[0.04em] text-ink"
         >
-          <Image
+          <SiteImage
             src="/photo/logo1.png"
             alt={site.name}
             width={48}

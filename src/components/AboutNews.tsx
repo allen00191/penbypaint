@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import Link from "next/link";
 import type { ArticleWithCategory } from "@/data/categories";
 import { formatDate } from "@/lib/format";
@@ -16,7 +16,7 @@ export function AboutNews({ articles }: { articles: ArticleWithCategory[] }) {
               className="group flex items-center gap-5 border-b border-hairline py-6 md:gap-8"
             >
               <div className="relative h-[86px] w-[130px] shrink-0 overflow-hidden rounded-md md:h-[100px] md:w-[160px]">
-                <Image
+                <SiteImage
                   src={article.coverUrl}
                   alt=""
                   fill

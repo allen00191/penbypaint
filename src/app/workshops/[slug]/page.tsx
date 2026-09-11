@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { InquiryForm } from "@/components/InquiryForm";
@@ -35,7 +35,7 @@ export default async function WorkshopDetailPage({ params }: Props) {
         ]}
       />
       <div className="relative mt-10 aspect-[3/2] overflow-hidden rounded-md">
-        <Image
+        <SiteImage
           src={workshop.coverUrl}
           alt={workshop.title}
           fill

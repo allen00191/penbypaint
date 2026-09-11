@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import Link from "next/link";
 import { SocialIcon } from "@/components/SocialIcon";
 import { site } from "@/data/site";
@@ -22,7 +22,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-2 lg:grid-cols-5 lg:gap-10">
         <div>
           <Link href="/" className="inline-block hover:opacity-70">
-            <Image
+            <SiteImage
               src="/photo/logo1.png"
               alt={site.name}
               width={56}

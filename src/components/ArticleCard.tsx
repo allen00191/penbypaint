@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import Link from "next/link";
 import type { ArticleWithCategory } from "@/data/categories";
 import { formatDate } from "@/lib/format";
@@ -11,7 +11,7 @@ export function ArticleCard({ article }: { article: ArticleWithCategory }) {
         className="grid gap-2 hover:opacity-70"
       >
         <div className="relative aspect-[334/222] overflow-hidden rounded-md">
-          <Image
+          <SiteImage
             src={article.coverUrl}
             alt={article.title}
             fill

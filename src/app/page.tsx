@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import { BannerCarousel } from "@/components/BannerCarousel";
 import { CourseCard } from "@/components/CourseCard";
 import { HomeAbout } from "@/components/HomeAbout";
@@ -33,7 +33,7 @@ export default function HomePage() {
       </div>
 
       <section className="relative mx-auto mt-[90px] max-w-[1200px] px-4 md:mt-[140px] md:px-8 lg:px-10">
-        <Image
+        <SiteImage
           src="/photo/Frame1.png"
           alt=""
           width={700}
@@ -55,7 +55,7 @@ export default function HomePage() {
       </section>
 
       <section className="relative mx-auto mt-[90px] max-w-[1200px] px-4 md:mt-[140px] md:px-8 lg:px-10">
-        <Image
+        <SiteImage
           src="/photoFrame1.png"
           alt=""
           width={700}
@@ -81,7 +81,7 @@ export default function HomePage() {
 
         <div className="relative -mt-px overflow-hidden bg-white px-4 pb-16 md:px-8 md:pb-20 lg:px-10">
           <div className="relative z-[1]">
-            <Image
+            <SiteImage
               src="/photoFrame2.png"
               alt=""
               width={700}

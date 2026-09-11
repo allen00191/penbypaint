@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import Link from "next/link";
 import type { CourseWithCategory } from "@/data/categories";
 import { formatPrice } from "@/lib/format";
@@ -11,7 +11,7 @@ export function CourseCard({ course }: { course: CourseWithCategory }) {
         className="grid gap-2 hover:opacity-70"
       >
         <div className="relative aspect-[334/222] overflow-hidden rounded-md">
-          <Image
+          <SiteImage
             src={course.coverUrl}
             alt={course.title}
             fill

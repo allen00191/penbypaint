@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 
 export function HomeIllustrations() {
   return (
@@ -6,7 +6,7 @@ export function HomeIllustrations() {
       aria-hidden
       className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[min(1600px,220vw)] overflow-hidden"
     >
-      <Image
+      <SiteImage
         src="/photo/Frame3.png"
         alt=""
         width={1024}

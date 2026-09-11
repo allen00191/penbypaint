@@ -65,4 +65,10 @@ npm run pack:host
 - Node.js **20+**、Production、startup file 設 `server.js`
 - Run NPM Install 後再 Start App
 
-分類篩選依賴 Node 伺服器，不能只把檔案丟進 `public_html` 當靜態站。第二期再補 `DATABASE_URL` 與資料庫。
+分類篩選已改為前端處理，GitHub Pages 靜態站也可篩選。第二期再補 `DATABASE_URL` 與資料庫。
+
+## GitHub Pages
+
+預覽網址：[https://allen00191.github.io/penbypaint/](https://allen00191.github.io/penbypaint/)
+
+推上 `main` 後，GitHub Actions 會用 `GITHUB_PAGES=true` 做靜態匯出並部署。本機開發仍走 [http://localhost:3000](http://localhost:3000)，不必加 `/penbypaint`。

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { PrimaryButton } from "@/components/PrimaryButton";
@@ -42,7 +42,7 @@ export default async function ArticlePage({ params }: Props) {
         {article.title}
       </SectionTitle>
       <div className="relative aspect-[3/2] overflow-hidden rounded-md">
-        <Image
+        <SiteImage
           src={article.coverUrl}
           alt={article.title}
           fill

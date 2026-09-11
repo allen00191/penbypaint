@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage } from "@/components/SiteImage";
 import Link from "next/link";
 import type { WorkshopWithCategory } from "@/data/categories";
 import { formatDateTime, workshopStatusLabel } from "@/lib/format";
@@ -15,7 +15,7 @@ export function WorkshopCard({
         className="grid gap-2 hover:opacity-70"
       >
         <div className="relative aspect-[334/222] overflow-hidden rounded-md">
-          <Image
+          <SiteImage
             src={workshop.coverUrl}
             alt={workshop.title}
             fill

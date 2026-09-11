@@ -3,6 +3,7 @@ import { Noto_Sans_TC } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { site } from "@/data/site";
+import { withBasePath } from "@/lib/basePath";
 import "./globals.css";
 
 const noto = Noto_Sans_TC({
@@ -19,8 +20,8 @@ export const metadata: Metadata = {
   },
   description: site.description,
   icons: {
-    icon: "/photo/logo1.png",
-    apple: "/photo/logo1.png",
+    icon: withBasePath("/photo/logo1.png"),
+    apple: withBasePath("/photo/logo1.png"),
   },
 };
 

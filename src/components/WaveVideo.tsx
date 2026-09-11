@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { withBasePath } from "@/lib/basePath";
 
 export function WaveVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -37,7 +38,7 @@ export function WaveVideo() {
             playsInline
             preload="metadata"
           >
-            <source src="/video/KidPaint.webm" type="video/webm" />
+            <source src={withBasePath("/video/KidPaint.webm")} type="video/webm" />
           </video>
         </div>
 
