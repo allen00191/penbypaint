@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "node server.js",
     "pack:host": "npm run build && node scripts/pack-ver1.mjs",
     "lint": "eslint"
