@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "機構合作" };
 
 export default function PartnershipsPage() {
   return (
-    <div className="mx-auto max-w-[992px]">
+    <div className="mx-auto w-full max-w-[992px]">
       <Breadcrumb
         items={[
           { href: "/", label: "主頁" },
@@ -28,7 +28,7 @@ export default function PartnershipsPage() {
             className="rounded-xl bg-card p-8 shadow-[0_0_15px_rgba(0,0,0,0.05)]"
           >
             <h2 className="text-[23px] font-medium">{plan.title}</h2>
-            <p className="mt-4 leading-8">{plan.body}</p>
+            <p className="mt-3 leading-7 text-primary">{plan.english}</p>
           </article>
         ))}
       </div>

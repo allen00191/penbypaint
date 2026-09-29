@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { InquiryForm } from "@/components/InquiryForm";
 import { SocialLinks } from "@/components/SocialLinks";
 import { site } from "@/data/site";
 
@@ -21,21 +20,21 @@ export default function ContactPage() {
         CONTACT
       </h1>
 
-      <InquiryForm variant="contact" />
-
       <section className="mt-24 border-t border-hairline pt-12">
+        <p className="mb-4 text-center text-[13px] tracking-[0.12em] text-muted">
+          Follow us
+        </p>
         <SocialLinks className="mb-10 justify-center" />
         <dl className="grid gap-8 text-[16px] leading-8 sm:grid-cols-2">
           <div>
             <dt className="text-[13px] tracking-[0.12em] text-muted">地址</dt>
-            <dd className="mt-1">{contact.address}</dd>
+            <dd className="mt-1">
+              <p>{contact.address}</p>
+              <p>{contact.addressEn}</p>
+            </dd>
           </div>
           <div>
-            <dt className="text-[13px] tracking-[0.12em] text-muted">開放時間</dt>
-            <dd className="mt-1">{contact.hours}</dd>
-          </div>
-          <div>
-            <dt className="text-[13px] tracking-[0.12em] text-muted">電話</dt>
+            <dt className="text-[13px] tracking-[0.12em] text-muted">聯絡電話</dt>
             <dd className="mt-1">
               <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="hover:text-primary">
                 {contact.phone}
@@ -43,7 +42,7 @@ export default function ContactPage() {
             </dd>
           </div>
           <div>
-            <dt className="text-[13px] tracking-[0.12em] text-muted">電郵</dt>
+            <dt className="text-[13px] tracking-[0.12em] text-muted">Email</dt>
             <dd className="mt-1">
               <a href={`mailto:${contact.email}`} className="hover:text-primary">
                 {contact.email}

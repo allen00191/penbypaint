@@ -36,32 +36,26 @@ export const site = {
   ],
   partnerships: {
     intro:
-      "把畫室的節奏帶到你們的空間，或把團體帶到觀塘。以下是常見合作方式，細節可再一起調整。",
+      "我們期待與不同領域的機構攜手開拓更多可能，歡迎透過下方方式與我們聯繫，共同探討合作詳情。",
     plans: [
-      {
-        title: "學校 / 課外活動",
-        body: "45–90 分鐘體驗、學期課、開放日攤位。可配合視覺藝術科學習重點。",
-      },
-      {
-        title: "企業 / 團隊日",
-        body: "半日馬賽克或浮遊花，強調一起完成而非競賽。可提供品牌色花材或包裝。",
-      },
-      {
-        title: "社區 / 團體",
-        body: "節日工作坊外判、家長工作坊、圖書館活動。名額與場地需求請先來訊。",
-      },
+      { title: "學校/教育", english: "Student Wellness & SEN" },
+      { title: "NGO/社區", english: "Community Healing" },
+      { title: "企業/HR", english: "Corporate Wellness & Team Building" },
+      { title: "品牌/商業", english: "Brand Events & VIP Workshop" },
+      { title: "婚禮/個人", english: "Wedding & Personal Mindfulness" },
     ],
   },
   contact: {
-    address: "香港觀塘成業街 19–27 號成業工業大廈 8 樓 B 室（示意地址）",
-    phone: "+852 5555 1212",
-    email: "hello@penbypaint.example",
-    hours: "星期二至日 10:00–18:30（星期一休息）",
+    address: "九龍新蒲崗大有街2-4號旺景工業大廈2樓C室B35",
+    addressEn:
+      "Unit B35, Flat C, 2/F, Wong King Industrial Building, 2 Tai Yau Street, San Po Kong, KLN",
+    phone: "+852 6196 7902",
+    email: "penbypaint@gmail.com",
     mapEmbedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.2!2d114.226!3d22.312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE4JzQzLjIiTiAxMTTCsDEzJzMzLjYiRQ!5e0!3m2!1szh-TW!2shk!4v1",
+      "https://maps.google.com/maps?q=Unit%20B35%2C%20Flat%20C%2C%202%2FF%2C%20Wong%20King%20Industrial%20Building%2C%202%20Tai%20Yau%20Street%2C%20San%20Po%20Kong&hl=zh-TW&z=17&output=embed",
   },
   social: [
-    { id: "whatsapp", label: "WhatsApp", href: "https://wa.me/85255551212" },
+    { id: "whatsapp", label: "WhatsApp", href: "https://wa.me/85261967902" },
     { id: "facebook", label: "Facebook", href: "https://www.facebook.com/penbypaint" },
     { id: "instagram", label: "Instagram", href: "https://www.instagram.com/penbypaint" },
     { id: "youtube", label: "YouTube", href: "https://www.youtube.com/@penbypaint" },
@@ -100,7 +94,7 @@ export const navItems: NavItem[] = [
     })),
   },
   { href: "/blog", label: "專欄" },
-  { href: "/partnerships", label: "品牌/企業合作" },
+  { href: "/partnerships", label: "合作" },
   { href: "/videos", label: "教學影片" },
   { href: "/contact", label: "聯絡我們" },
 ];

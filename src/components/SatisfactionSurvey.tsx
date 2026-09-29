@@ -98,10 +98,7 @@ export function SatisfactionSurvey() {
           ))}
         </ul>
 
-        <p className="mx-auto mt-8 max-w-[520px] text-[13px] leading-7 text-muted">
-          根據畫室學員與家長問卷（示意數據）。
-        </p>
-        <p className="mx-auto mt-4 max-w-[640px] text-[15px] leading-8 text-ink">
+        <p className="mx-auto mt-8 max-w-[640px] text-[15px] leading-8 text-ink">
           我們對參加興趣班與工作坊的學員、家長進行了滿意度調查，並
           <span className="font-bold whitespace-nowrap text-primary">
             收到許多正面回饋
@@ -117,9 +114,6 @@ export function SatisfactionSurvey() {
         <br className="hidden md:inline" />
         也在意能帶走、可重複的
         <span className="text-primary">創作習慣</span>。
-      </p>
-      <p className="mt-4 text-[13px] tracking-[0.08em] text-muted">
-        數據為網站示意，正式問卷將於後台接上後更新。
       </p>
     </section>
   );

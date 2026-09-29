@@ -40,7 +40,7 @@ export function Footer() {
 
         <div className="max-w-[260px] text-[14px] leading-7">
           <p>{site.contact.address}</p>
-          <p className="mt-2">{site.contact.hours}</p>
+          <p className="mt-2">{site.contact.addressEn}</p>
         </div>
 
         <nav className="flex flex-col gap-3 text-[14px]" aria-label="頁尾資訊">
